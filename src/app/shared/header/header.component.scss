@@ -1,11 +1,20 @@
 .navbar-dark .navbar-nav .nav-link {
-    color: #000!important;
+    color: #fff!important;
 }
 
 .navbar-dark .navbar-brand {
-    color: #000!important;
+    color: #fff;
     letter-spacing: 4px;
     font-size: 26px;
     line-height: 40px;
+}
+
+.w-100 {
+    width: 95%!important;
+}
+.navbar .dropdown.dropend .dropdown-menu {
+    left: 100%;
+    right: auto;
+    top: -13px;
 }
 

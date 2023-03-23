@@ -8,6 +8,11 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { InstiutionsComponent } from './instiutions/instiutions.component';
+import { ProfessionalComponent } from './professional/professional.component';
+import { StudentComponent } from './student/student.component';
+import { EmployerComponent } from './employer/employer.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -17,7 +22,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SigninComponent,
     SignupComponent,
     AboutusComponent,
-    DashboardComponent
+    DashboardComponent,
+    InstiutionsComponent,
+    ProfessionalComponent,
+    StudentComponent,
+    EmployerComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
