@@ -13,6 +13,8 @@ import { ProfessionalComponent } from './professional/professional.component';
 import { StudentComponent } from './student/student.component';
 import { EmployerComponent } from './employer/employer.component';
 import { AdminComponent } from './admin/admin.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,11 +29,15 @@ import { AdminComponent } from './admin/admin.component';
     ProfessionalComponent,
     StudentComponent,
     EmployerComponent,
-    AdminComponent
+    AdminComponent,
+
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  
   ]
 })
 export class PagesModule { }
