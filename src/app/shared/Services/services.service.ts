@@ -8,9 +8,33 @@ import { HttpClient } from '@angular/common/http';
 export class ServicesService {
   constructor(private httpClient: HttpClient) { }
 
-  public UserSingup(data: any): Observable<any> {
+  public studentSingup(data: any): Observable<any> {
     try {
       return this.httpClient.post("https://talent-factories-core-app-xbamn.ondigitalocean.app/student/createStudent", data)
+    } catch (error) { 
+      return throwError('error')
+    }
+  }
+
+  public institutionSignUp(data: any): Observable<any> {
+    try {
+      return this.httpClient.post("https://talent-factories-core-app-xbamn.ondigitalocean.app/learning-org/AddlearnOrg", data)
+    } catch (error) { 
+      return throwError('error')
+    }
+  }
+
+  public professionalSignUp(data: any): Observable<any> {
+    try {
+      return this.httpClient.post("https://talent-factories-core-app-xbamn.ondigitalocean.app/learning-org/AddlearnOrg", data)
+    } catch (error) { 
+      return throwError('error')
+    }
+  }
+
+  public employerSignUp(data: any): Observable<any> {
+    try {
+      return this.httpClient.post("https://talent-factories-core-app-xbamn.ondigitalocean.app/organization/createOrganization", data)
     } catch (error) { 
       return throwError('error')
     }

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  constructor() { }
+    ngOnInit() { }
+    signupType(type:any){
+    localStorage.setItem('type',type)
+    console.log("typeAdmin")
+   }
 }

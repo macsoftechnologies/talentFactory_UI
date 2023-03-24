@@ -159,16 +159,16 @@
               </li>-->
               <li class="dropdown dropend">
                 <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Instiutions
+                  Institutions
                 </a>
                 <ul class="dropdown-menu">
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Institutions')" [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign up
                     </a>
                   </li>
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Institutions')" [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign in
                     </a>
                     </li>
@@ -180,12 +180,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Professional')"  [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign up
                     </a>
                   </li>
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Professional')" [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign in
                     </a>
                     </li>
@@ -197,12 +197,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Student')" [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign up
                     </a>
                   </li>
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Student')"  [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign in
                     </a>
                     </li>
@@ -214,12 +214,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Employer')"  [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign up
                     </a>
                   </li>
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Employer')" [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign in
                     </a>
                     </li>
@@ -231,12 +231,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Admin')" [routerLink]="['/Sign-Up']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign up
                     </a>
                   </li>
                   <li class="dropdown dropend">
-                    <a [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a (click)="signupType('Admin')" [routerLink]="['/Sign-In']" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sign in
                     </a>
                     </li>
