@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { InstiutionsComponent } from './pages/dashboard/instiutions/instiutions.component';
 import { EmployerComponent } from './pages/employer/employer.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { InstiutionsComponent } from './pages/instiutions/instiutions.component';
 import { ProfessionalComponent } from './pages/professional/professional.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -34,7 +34,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'instiutions', component:InstiutionsComponent
+    path: ':Dashboard/:instiutions', component:InstiutionsComponent
   },
 
   {
