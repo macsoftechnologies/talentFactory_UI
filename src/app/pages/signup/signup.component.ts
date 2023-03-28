@@ -52,7 +52,7 @@ export class SignupComponent implements OnInit {
               icon: "success",
               text: "User Successfully Registered",
             });
-            this.router.navigateByUrl("/Dashboard/:instiutions");
+            this.router.navigateByUrl("/Dashboard");
           } else {
             console.log("error");
             Swal.fire({

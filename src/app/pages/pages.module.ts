@@ -10,10 +10,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { StudentComponent } from './student/student.component';
-import { EmployerComponent } from './employer/employer.component';
 import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from '../shared/header/header.component';
 
 
 @NgModule({
@@ -26,8 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     ProfessionalComponent,
     StudentComponent,
-    EmployerComponent,
+   
     AdminComponent,
+    HeaderComponent
 
   ],
   imports: [

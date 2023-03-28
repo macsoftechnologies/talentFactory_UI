@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EmployerComponent } from './employer/employer.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { InstiutionsComponent } from './pages/dashboard/instiutions/instiutions.component';
-import { EmployerComponent } from './pages/employer/employer.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ProfessionalComponent } from './pages/professional/professional.component';
 import { SigninComponent } from './pages/signin/signin.component';
@@ -34,10 +33,6 @@ const routes: Routes = [
   },
 
   {
-    path: ':Dashboard/:instiutions', component:InstiutionsComponent
-  },
-
-  {
     path: 'professional', component: ProfessionalComponent
   },
   {
@@ -55,6 +50,10 @@ const routes: Routes = [
   {
     path: 'pages',
     loadChildren: () => import('./pages/pages.module').then (m => m.PagesModule)
+  },
+  {
+    path: 'institutions',
+    loadChildren: () => import('./institutions/institutions.module').then (m => m.InstitutionsModule)
   }
 ];
 
