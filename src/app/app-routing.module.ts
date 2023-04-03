@@ -1,64 +1,42 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EmployerComponent } from './employer/employer.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
-import { AdminComponent } from './pages/admin/admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { ProfessionalComponent } from './pages/professional/professional.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
-import { StudentComponent } from './pages/student/student.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomepageComponent
+    component: HomepageComponent,
   },
   {
     path: 'About-Us',
-    component: AboutusComponent
+    component: AboutusComponent,
   },
   {
     path: 'Sign-In',
-    component: SigninComponent
+    component: SigninComponent,
   },
   {
     path: 'Sign-Up',
-    component: SignupComponent
+    component: SignupComponent,
   },
   {
     path: 'Dashboard',
-    component: DashboardComponent
-  },
-
-  {
-    path: 'professional', component: ProfessionalComponent
-  },
-  {
-    path: 'student', component: StudentComponent
-  },
-
-  {
-    path: 'employer', component:EmployerComponent
-  },
-
-  {
-    path:'admin', component:AdminComponent
+    component: DashboardComponent,
   },
 
   {
     path: 'pages',
-    loadChildren: () => import('./pages/pages.module').then (m => m.PagesModule)
+    loadChildren: () =>
+      import('./pages/pages.module').then((m) => m.PagesModule),
   },
-  {
-    path: 'institutions',
-    loadChildren: () => import('./institutions/institutions.module').then (m => m.InstitutionsModule)
-  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

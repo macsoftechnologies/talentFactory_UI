@@ -7,14 +7,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProfessionalComponent } from './professional/professional.component';
-import { StudentComponent } from './student/student.component';
-import { AdminComponent } from './admin/admin.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from '../shared/header/header.component';
-
+import { InstitutionDashboardComponent } from './institution-dashboard/institution-dashboard.component';
+import { ProfessionalDashboardComponent } from './professional-dashboard/professional-dashboard.component';
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
+import { EmployerDashboardComponent } from './employer-dashboard/employer-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -23,20 +24,19 @@ import { HeaderComponent } from '../shared/header/header.component';
     SigninComponent,
     SignupComponent,
     AboutusComponent,
-    DashboardComponent,
-    ProfessionalComponent,
-    StudentComponent,
-   
-    AdminComponent,
-    HeaderComponent
-
+    // DashboardComponent,
+    HeaderComponent,
+    InstitutionDashboardComponent,
+    ProfessionalDashboardComponent,
+    StudentDashboardComponent,
+    EmployerDashboardComponent,
+    AdminDashboardComponent,
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-  
-  ]
+  ],
 })
-export class PagesModule { }
+export class PagesModule {}

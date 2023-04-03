@@ -5,20 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PagesModule } from './pages/pages.module';
+// import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent, 
-    
+    FooterComponent,
+    // HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PagesModule,
-    
-  ],
+  imports: [BrowserModule, AppRoutingModule, PagesModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
